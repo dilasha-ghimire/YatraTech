@@ -1,0 +1,142 @@
+body {
+    background-image: url('src/assets/Homepage/Background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.homepage-content {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.homepage-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.homepage-title-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+}
+
+#homepage-icon {
+    margin: 1vw 0 1vw 1vw;
+    padding: 1vw;
+    height: 70px;
+    width: 80px;
+}
+
+#homepage-title {
+    margin: 1vw 0 1vw 1vw;
+    padding-top: 20px;
+    height: 70px;
+    width: 120px;
+    font-size: 35px;
+}
+.yatra {
+    background-image: linear-gradient(90deg, rgba(3,4,94,1) 20%, rgba(2,20,106,1) 40%, rgba(2,34,117,1) 60%, rgba(2,50,129,1) 80%, rgba(2,62,138,1) 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tech {
+    color: rgba(2,62,138,1);
+}
+
+#homepage-login-icon {
+    right: 0;
+    margin: 1vw 0 1vw 1vw;
+    padding: 1vw;
+    height: 65px;
+    width: 65px;
+}
+
+.homepage-login-container {
+    position: relative;
+}
+
+.homepage-main {
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc(100% - 110px);
+}
+.homepage-written{
+    display: flex;
+    flex-direction: column;
+}
+.homepage-h3{
+    margin-top: 3vw;
+    padding-left: 5vw;
+    color: rgba(3,4,94,1);
+    font-size: 3vw;
+}
+.homepage-p{
+    color:  rgba(2,20,106,1);
+    padding-left: 4vw;
+    font-size: 1.5vw;
+}
+
+.homepage-explore-button{
+    padding-left: 5vw;
+}
+
+#hp-explore-button{
+    height: 4vw;
+    width: 14vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    color: rgba(2,62,138,1);
+    background-color: rgba(2, 62, 138, 0.47);
+}
+
+#hp-gif{
+    margin-top: 100px;
+    height: 450px;
+}
+
+@media screen and (max-width: 1300px){
+    #hp-gif{
+        margin-top: 140px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1110px){
+    #hp-gif{
+        margin-top: 180px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    #hp-gif{
+        margin-top: 240px;
+        height: 300px;
+    }
+}
+@media screen and (max-width: 825px){
+    #hp-gif{
+        margin-top: 280px;
+        margin-right: 20px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 605px){
+    #hp-gif{
+        margin-top: 320px;
+        height: 200px;
+    }
+}
