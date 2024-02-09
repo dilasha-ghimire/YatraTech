@@ -1,11 +1,7 @@
-body {
+.homepage-content {
     background-image: url('src/assets/Homepage/Background.png');
     background-size: cover;
     background-position: center;
-}
-
-
-.homepage-content {
     position: absolute;
     top: 0;
     height: 100vh;
@@ -28,14 +24,13 @@ body {
 }
 
 #homepage-icon {
-    margin: 1vw 0 1vw 1vw;
-    padding: 1vw;
-    height: 70px;
-    width: 80px;
+    margin-top: 20px;
+    padding-left: 10px;
+    height: 50px;
 }
 
 #homepage-title {
-    margin: 1vw 0 1vw 1vw;
+    margin: 3px 10px 10px 10px;
     padding-top: 20px;
     height: 70px;
     width: 120px;
@@ -54,9 +49,9 @@ body {
 
 #homepage-login-icon {
     right: 0;
-    margin: 1vw 0 1vw 1vw;
-    padding: 1vw;
-    height: 65px;
+    margin-top: 20px;
+    padding-right: 10px;
+    height: 55px;
     width: 65px;
 }
 
@@ -85,7 +80,7 @@ body {
 }
 .homepage-p{
     color:  rgba(2,20,106,1);
-    padding-left: 4vw;
+    padding-left: 2.5vw;
     font-size: 1.5vw;
 }
 
@@ -137,6 +132,7 @@ body {
 @media screen and (max-width: 605px){
     #hp-gif{
         margin-top: 320px;
+        margin-right: 0;
         height: 200px;
     }
 }

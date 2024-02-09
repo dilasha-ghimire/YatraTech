@@ -2,6 +2,7 @@ import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import { QueryClient, QueryClientProvider } from 'react-query';
 
 import Homepage from "./tsx-files/Homepage.tsx";
+import AuthenticationForm from "./tsx-files/AuthenticationForm.tsx";
 
 
 const router = createBrowserRouter(
@@ -9,6 +10,10 @@ const router = createBrowserRouter(
         {
             path: "/",
             element: <Homepage/>
+        },
+        {
+            path: "/join-our-family",
+            element: <AuthenticationForm/>
         }
     ]
 )
