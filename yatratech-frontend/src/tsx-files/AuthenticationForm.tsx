@@ -67,8 +67,9 @@ function AuthenticationForm () {
                         <div className="auth-content">
                             <h3>New here ?</h3>
                             <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-                                ex ratione. Aliquid!
+                                Start your journey with us today! Explore our wide
+                                range of vehicles and find the perfect car for your
+                                next adventure.
                             </p>
                             <div className="sign-up-button-container">
                                 <button className="authenticate-btn transparent" onClick={handleSignUpClick}>
@@ -85,8 +86,8 @@ function AuthenticationForm () {
                         <div className="auth-content">
                             <h3>One of us ?</h3>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-                                laboriosam ad deleniti.
+                                Welcome back! Sign in to manage your bookings,
+                                access exclusive deals, and hit the road with ease.
                             </p>
                             <div className="sign-up-button-container">
                                 <button className="authenticate-btn transparent" onClick={handleSignInClick}>

@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import Homepage from "./tsx-files/Homepage.tsx";
 import AuthenticationForm from "./tsx-files/AuthenticationForm.tsx";
+import AdminDashboard from "./tsx-files/AdminDashboard.tsx";
 
 
 const router = createBrowserRouter(
@@ -14,6 +15,10 @@ const router = createBrowserRouter(
         {
             path: "/join-our-family",
             element: <AuthenticationForm/>
+        },
+        {
+            path: "/admin-dashboard",
+            element: <AdminDashboard/>
         }
     ]
 )

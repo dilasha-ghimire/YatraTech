@@ -1,0 +1,87 @@
+.admin-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100vw;
+    background-color: #89adbd;
+}
+
+.admin-header-nav {
+    position: fixed;
+    top: 130px;
+    left: 10px;
+    padding: 1.7rem 1.9rem 0;
+    width: 90px;
+    background-color: rgba(2, 62, 138, 0.47);
+    box-shadow: 1px 0 0 rgba(22, 8, 43, 0.1);
+    border-radius: 20px;
+    z-index: 100;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.admin-header-nav:hover {
+    width: 220px;
+}
+
+.admin-header-nav-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.admin-header-nav-container::-webkit-scrollbar {
+    display: none;
+}
+
+.admin-header-nav-list,
+.admin-header-nav-items {
+    display: grid;
+}
+
+.admin-header-nav-list {
+    row-gap: 2.5rem;
+}
+
+.admin-header-nav-items {
+    row-gap: 1.7rem;
+}
+
+.admin-header-nav-link {
+    display: flex;
+    align-items: center;
+    color: #b7d8bc;
+    gap: 5px;
+}
+
+.admin-header-nav-link:hover {
+    color: antiquewhite;
+}
+
+.admin-header-nav-icon {
+    font-size: 1.3rem;
+    margin-right: .5rem;
+}
+
+.admin-header-nav-name {
+    font-size:.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.admin-header-nav-logout {
+    margin-top: 5rem;
+    margin-left: -19px;
+    background-color: transparent;
+    outline: none;
+}
+
+.admin-header-nav-logout:hover {
+    outline: none;
+    border-color: transparent;
+}
