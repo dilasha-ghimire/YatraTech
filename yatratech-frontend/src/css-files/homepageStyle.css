@@ -47,18 +47,6 @@
     color: rgba(2,62,138,1);
 }
 
-#homepage-login-icon {
-    right: 0;
-    margin-top: 20px;
-    padding-right: 10px;
-    height: 55px;
-    width: 65px;
-}
-
-.homepage-login-container {
-    position: relative;
-}
-
 .homepage-main {
     position: absolute;
     top: 110px;

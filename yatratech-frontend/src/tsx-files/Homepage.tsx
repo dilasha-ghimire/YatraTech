@@ -10,9 +10,6 @@ function Homepage () {
                         <img id = "homepage-icon" src = "/YatraTech.png" alt="YatraTech Icon"/>
                         <h2 id = "homepage-title"><span className="yatra">Yatra</span><span className="tech">Tech</span></h2>
                     </div>
-                    <div className="homepage-login-container">
-                        <Link to="/join-our-family"><img id = "homepage-login-icon" src = "src/assets/Homepage/user-login.png" alt="YatraTech Login Icon"/></Link>
-                    </div>
                 </div>
                 <div className="homepage-main">
                     <div className="homepage-written">

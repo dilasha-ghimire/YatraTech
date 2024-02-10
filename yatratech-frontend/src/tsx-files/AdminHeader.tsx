@@ -13,9 +13,9 @@ const AdminHeader: React.FC = () => {
     return (
         <>
             <div className="admin-header">
-                <div className="homepage-title-container">
-                    <img id = "homepage-icon" src = "/YatraTech.png" alt="YatraTech Icon"/>
-                    <h2 id = "homepage-title"><span className="yatra">Yatra</span><span className="tech">Tech</span></h2>
+                <div className="adminheader-title-container">
+                    <img id = "adminheader-icon" src = "/YatraTech.png" alt="YatraTech Icon"/>
+                    <h2 id = "adminheader-title"><span className="admin-yatra">Yatra</span><span className="admin-tech">Tech</span></h2>
                 </div>
             </div>
 
@@ -24,22 +24,22 @@ const AdminHeader: React.FC = () => {
                     <div>
                         <div className="admin-header-nav-list">
                             <div className="admin-header-nav-items">
-                                <Link to="" className="admin-header-nav-link">
+                                <Link to="/admin-dashboard" className="admin-header-nav-link">
                                     <FontAwesomeIcon className="admin-header-nav-icon" icon={faHouse} />
                                     <span className="admin-header-nav-name">Home</span>
                                 </Link>
 
-                                <Link to="" className="admin-header-nav-link">
+                                <Link to="/admin-users" className="admin-header-nav-link">
                                     <FontAwesomeIcon className="admin-header-nav-icon" icon={faUser} />
                                     <span className="admin-header-nav-name">Users</span>
                                 </Link>
 
-                                <Link to="" className="admin-header-nav-link">
+                                <Link to="/admin-orders" className="admin-header-nav-link">
                                     <FontAwesomeIcon className="admin-header-nav-icon" icon={faTableList} />
                                     <span className="admin-header-nav-name">Orders</span>
                                 </Link>
 
-                                <Link to="" className="admin-header-nav-link">
+                                <Link to="/admin-vehicles" className="admin-header-nav-link">
                                     <FontAwesomeIcon className="admin-header-nav-icon" icon={faCarSide} />
                                     <span className="admin-header-nav-name">Vehicles</span>
                                 </Link>

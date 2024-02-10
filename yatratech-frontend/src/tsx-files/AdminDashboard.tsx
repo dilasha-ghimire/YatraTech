@@ -5,6 +5,9 @@ function AdminDashboard () {
     return (
         <>
             <AdminHeader/>
+            <div className="admin-dashboard-content">
+
+            </div>
         </>
     )
 }
