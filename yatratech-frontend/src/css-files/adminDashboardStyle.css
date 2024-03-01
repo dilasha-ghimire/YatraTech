@@ -4,5 +4,87 @@
     width: 100vw;
     height: calc(100vh - 100px);
     background-color: white;
-    padding-left: 120px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    z-index: 100;
+}
+
+.admin-dashboard-logout{
+    margin-right: 10px;
+    z-index: 999;
+}
+
+#admin-dashboard-logout{
+    background: transparent;
+    color: rgba(3,4,94,1);
+    font-size: 20px;
+}
+
+#admin-dashboard-logout:hover {
+    border-color: transparent;
+}
+
+.admin-dashboard-logout-icon{
+    margin-right: 10px;
+}
+
+.admin-dashboard-record{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+    gap: 2vw;
+}
+
+.admin-dashboard-users,
+.admin-dashboard-vehicle,
+.admin-dashboard-orders{
+    height: 30vh;
+    width: 30vw;
+    background-color: rgba(2, 62, 138, 0.49);
+    border-radius: 40px;
+
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-dashboard-users h2,
+.admin-dashboard-vehicle h2,
+.admin-dashboard-orders h2 {
+    font-size: 6vw;
+}
+
+.admin-dashboard-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 3vw;
+    gap: 2vw;
+}
+
+.admin-dashboard-users-button,
+.admin-dashboard-vehicle-button,
+.admin-dashboard-orders-button{
+    height: 30vh;
+    width: 30vw;
+    background-color: rgba(2, 62, 138, 0.49);
+    border-radius: 40px;
+
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.admin-dashboard-button-icon{
+    font-size: 6vw;
+    padding: 1vw;
 }

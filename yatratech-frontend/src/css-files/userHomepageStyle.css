@@ -1,3 +1,7 @@
+body{
+    overflow-x: hidden;
+}
+
 .user-header {
     position: absolute;
     top: 0;
@@ -58,8 +62,9 @@
 }
 
 .user-homepage-content{
+    position: absolute;
+    top: 0;
     width: 100vw;
-    height: 100vh;
     padding-top: 100px;
     background-color: white;
 }
@@ -70,6 +75,289 @@
     outline: transparent;
     color: rgba(2,62,138,1);
 }
+
 .user-homepage-logout-button:hover{
     border-color: transparent;
+}
+
+.user-homepage-welcome-container {
+    background-size: cover;
+    min-height: 85vh;
+    position: relative;
+}
+
+@media screen and (max-width: 1255px) {
+    .user-homepage-welcome-container {
+        min-height: 65vh;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    .user-homepage-welcome-container {
+        min-height: 45vh;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .user-homepage-welcome-container {
+        min-height: 35vh;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .user-homepage-welcome-container {
+        min-height: 30vh;
+    }
+}
+
+.user-homepage-welcome-note{
+    background-color: white;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.user-homepage-welcome-note p{
+    padding: 2.5vw;
+}
+
+.user-homepage-title{
+    background-color: white;
+    padding: 0;
+    text-align: center;
+}
+
+.user-homepage-search-bars{
+    background-color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 20px 20px 30px 20px;
+}
+
+.user-homepage-name-search, .user-homepage-type-search{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.user-homepage-name-searchbar, .user-homepage-type-searchbar{
+    height: 30px;
+    width: 200px;
+    border-color: grey;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+}
+
+.user-homepage-name-searchbtn, .user-homepage-type-searchbtn{
+    height: 30px;
+    width: 80px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 1350px){
+    .user-homepage-search-bars{
+        margin-top: 30px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .user-homepage-search-bars{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .user-homepage-name-search, .user-homepage-type-search{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        gap: 10px;
+    }
+
+    .user-homepage-name-searchbar, .user-homepage-type-searchbar {
+        width: 150px;
+    }
+}
+
+.user-homepage-vehicle-list {
+    margin: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.user-homepage-vehicle-card{
+    height: 50vw;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 30px;
+}
+
+.user-homepage-card-image-view{
+    margin: 0 1vw 0 0;
+    height: 27vw;
+    width: 41vw;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#user-homepage-card-image{
+    height: 27vw;
+    width: 41vw;
+}
+
+.user-homepage-vehicle-card-content{
+    padding-top: 20px;
+}
+
+.user-homepage-vehicle-card-content h3{
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
+.user-homepage-order-button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+    .user-homepage-vehicle-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .user-homepage-vehicle-card{
+        height: 550px;
+        width: 350px;
+    }
+    .user-homepage-card-image-view{
+        height: 200px;
+        width: 300px;
+    }
+    #user-homepage-card-image{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .user-homepage-vehicle-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .user-homepage-vehicle-list{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+.user-homepage-footer{
+    background-color: rgb(25, 51, 82);
+    padding: 7px;
+    color: white;
+}
+
+.user-order-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: rgb(25, 51, 82);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    width: 70vw;
+}
+
+.user-order-form-title{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-order-form-detail{
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    color: white;
+    font-size: 3vw;
+}
+
+.user-order-form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.order-date,
+.pickup-location,
+.pickup-time,
+.dropoff-location,
+.dropoff-time {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+@media screen and (max-width: 700px) {
+    .order-date,
+    .pickup-location,
+    .pickup-time,
+    .dropoff-location,
+    .dropoff-time {
+        gap: 50px;
+    }
+
+    .user-order-form-container{
+        gap: 5vw;
+    }
+
+    #order-date,
+    #pickup-location,
+    #pickup-time,
+    #dropoff-location,
+    #dropoff-time {
+        height: 40px;
+        width: 210px;
+    }
+}
+
+#order-date-label,
+#pickup-location-label,
+#pickup-time-label,
+#dropoff-location-label,
+#dropoff-time-label
+{
+    color: white;
+    font-size: 2.5vw;
+}
+
+#order-date,
+#pickup-location,
+#pickup-time,
+#dropoff-location,
+#dropoff-time {
+    background-color: rgba(151, 163, 192, 0.91);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.user-order-form-submit{
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-end;
 }

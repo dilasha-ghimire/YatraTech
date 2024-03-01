@@ -1,6 +1,6 @@
 import '../css-files/adminHeaderStyle.css';
 import React from "react";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +9,13 @@ import { faCarSide } from '@fortawesome/free-solid-svg-icons';
 import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
 const AdminHeader: React.FC = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        localStorage.clear();
+        navigate('/');
+    }
 
     return (
         <>
@@ -45,7 +52,7 @@ const AdminHeader: React.FC = () => {
                                 </Link>
 
 
-                                <button className="admin-header-nav-link admin-header-nav-logout">
+                                <button className="admin-header-nav-link admin-header-nav-logout" onClick={handleLogout}>
                                     <FontAwesomeIcon className="admin-header-nav-icon" icon={faArrowRightFromBracket} />
                                     <span className="admin-header-nav-name">Log Out</span>
                                 </button>

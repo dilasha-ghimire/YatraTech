@@ -1,6 +1,98 @@
 .user-profile-content{
+    position: absolute;
+    top: 0;
     width: 100vw;
-    height: 100vh;
     padding-top: 100px;
     background-color: white;
+}
+
+.user-profile-your-details{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 1.7vw;
+}
+
+.user-profile-your-details h1{
+    font-family: Gabriola;
+}
+
+.user-profile-order-history{
+    padding-left: 20px;
+    font-size: 1.7vw;
+}
+
+.user-profile-order-history-title h1{
+    font-family: Gabriola;
+}
+
+.user-profile-buttons{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    gap: 10px;
+}
+
+.user-profile-password, .edit-btn-submit {
+    font-size: 1vw;
+    padding: 1vw;
+}
+
+.user-profile-edit{
+    height: 50px;
+    padding: 10px;
+}
+
+.user-profile-edit-form form {
+    padding: 20px;
+}
+
+.user-profile-edit-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-control{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 25vw;
+    height: 2vw;
+}
+
+.edit-form-title{
+    font-size: 1vw;
+}
+
+.user-profile-edit-form{
+    margin-right: 10px;
+    height: 17vw;
+}
+
+@media screen and (max-width: 1100px) {
+    .user-profile-edit-form{
+        height: 19vw;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .user-profile-edit-form{
+        height: 21vw;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .user-profile-edit-form{
+        height: 23vw;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .user-profile-edit-form{
+        height: 24.5vw;
+    }
+    .user-profile-edit-form form{
+        padding: 10px;
+    }
+    .edit-btn-submit{
+        margin-top: -13px;
+    }
 }

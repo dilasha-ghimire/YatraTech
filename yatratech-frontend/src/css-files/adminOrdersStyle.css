@@ -2,7 +2,20 @@
     position: absolute;
     top: 100px;
     width: 100vw;
-    height: calc(100vh - 100px);
     background-color: white;
     padding-left: 120px;
+}
+
+.admin-order-details{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+}
+
+.order-item{
+    width: 60vw;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 3px solid #ccc;
 }

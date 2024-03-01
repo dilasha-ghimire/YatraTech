@@ -1,3 +1,19 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(2,62,138,1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(2, 28, 61);
+}
+
 .homepage-content {
     background-image: url('src/assets/Homepage/Background.png');
     background-size: cover;
@@ -57,18 +73,25 @@
     height: calc(100% - 110px);
 }
 .homepage-written{
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .homepage-h3{
     margin-top: 3vw;
     padding-left: 5vw;
     color: rgba(3,4,94,1);
-    font-size: 3vw;
+}
+
+.homepage-h3 h2{
+    font-size: 4vw;
+    font-weight: bold;
 }
 .homepage-p{
     color:  rgba(2,20,106,1);
     padding-left: 2.5vw;
+    padding-top: 10px;
     font-size: 1.5vw;
 }
 
@@ -83,6 +106,12 @@
     padding: 1vw;
     color: rgba(2,62,138,1);
     background-color: rgba(2, 62, 138, 0.47);
+}
+
+.homepage-gif {
+    position: absolute;
+    top: 50px;
+    right: 10px;
 }
 
 #hp-gif{
